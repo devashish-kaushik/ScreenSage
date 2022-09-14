@@ -1,12 +1,13 @@
 {
-    // Required fields
-    "manifest_version": 3,
+    "manifest_version": 2,
     "name": "ScreenSage",
     "version": "0.0.1",
 
     "author": "Devashish Kaushik for Team ScreenSage",
+    
     "background": {
-        "service_worker": "background.js"
+        "scripts": ["background.js"],
+        "persistent": true
     },
 
     "description": "A website blocker that helps make your screentime more healthy and controlled, and leads to Pratyāhāra in a world full of distractions.",
@@ -17,11 +18,11 @@
         "128": "icons/icon128.png"
     },
 
-    // Permissions requested by extension
     "permissions": [
+        "tabs",
         "webNavigation",
         "webRequest",
-        "webRequestBlocking"
-      ],
-    "host_permissions": ["*://*/*"]
+        "webRequestBlocking",
+        "<all_urls>"
+      ]
 }
