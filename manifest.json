@@ -21,7 +21,7 @@
     "permissions": [
         "webNavigation",
         "webRequest",
-        "webRequestBlocking",
-        "<all_urls>"
-      ]
+        "webRequestBlocking"
+      ],
+    "host_permissions": ["*://*/*"]
 }
