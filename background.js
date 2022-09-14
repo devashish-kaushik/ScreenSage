@@ -1,5 +1,5 @@
 var callback = function(details) {
-    return {cancel: true};
+    return {redirectUrl: "chrome-extension://ScreenSage/SageMode.html"};
 };
 
 var filter = { urls: ["*://*.facebook.com/*", "*://*.youtube.com/*", "*://*.twitter.com/*", "*://*.reddit.com/*", "*://*.netflix.com/*", "*://*.4chan.org/*", "*://*.twitch.tv/*","*://*.instagram.com/*"]};
