@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
     "name": "ScreenSage",
-    "version": "0.1.0.0",
+    "version": "0.1.0.1",
 
     "author": "Devashish Kaushik for Team ScreenSage",
     
@@ -14,7 +14,7 @@
         "default_icon": "icons/icon16.png",
         "default_popup": "popup/popup.html"
     },
-    
+
     "web_accessible_resources": ["sagemode.html"],
 
     "description": "A website blocker that helps make your screentime more healthy and controlled, and leads to Pratyāhāra in a world full of distractions.",

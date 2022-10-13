@@ -6,8 +6,25 @@ function blockRequest(details) {
 
 var defaultFilter = { urls: ["*://*.facebook.com/*", "*://*.youtube.com/*", "*://*.twitter.com/*", "*://*.reddit.com/*", "*://*.netflix.com/*", "*://*.4chan.org/*", "*://*.twitch.tv/*","*://*.instagram.com/*"]};
 
+// Runs when extension is first installed
+// Basically to do some housekeeping and setup work
+chrome.runtime.onInstalled.addListener(function(details){ // The event can also be triggered by an update
+    alert("Install suspected")
+    if(details.reason == "install"){ // The reason attribiute allows us to know for sure
+        alert("Install confirmed")
+        chrome.storage.local.set(defaultFilter , function() { // Saves the default filter with all 8 sites blocked to storage
+            alert("Filter saved  ", defaultFilter)
+            chrome.webRequest.onBeforeRequest.addListener( // Adds a blocker based on the full default filter list
+                blockRequest, defaultFilter, ["blocking"]);
+                // It uses the same callback function as the regular message activated webRequest.onBeforeRequest blocker
+                // This ensures that the filter set here will be appropriately removed in the next update call
+                // just like a regular filter
+                // Thus, the full benefit of blocking is present from the moment of installation without user intervention
+        });
+    }
+});
 
-  chrome.runtime.onMessage.addListener(function(response, sender, sendResponse) {
+chrome.runtime.onMessage.addListener(function(response, sender, sendResponse) {
     alert(response);
     // console.log(response)
     alert("Message received from popup")
@@ -32,13 +49,3 @@ var defaultFilter = { urls: ["*://*.facebook.com/*", "*://*.youtube.com/*", "*:/
     }
   });
 
-  // Runs when extension is first installed
-  // Basically to do some housekeeping and setup work
-  chrome.runtime.onInstalled.addListener(function(details){ // The event can also be triggered by an update
-    if(details.reason == "install"){ // The reason attribiute allows us to know for sure
-        chrome.storage.local.set(defaultFilter , function() { // Saves the default filter with all 8 sites blocked to storage
-            chrome.runtime.sendMessage("URLUPDATE"); // Sends a message which will trigger the listener looking for filter modification
-            // This will start the default blocking listener until the user makes any further changes via the popup
-        });
-    }
-});
