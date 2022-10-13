@@ -2,7 +2,7 @@
 A website blocker that helps make your screentime more healthy and controlled, and leads to Pratyāhāra in a world full of distractions.
  
 ## Installation:
-Currently, ScreenSage is only available as a Chromium extension.
+Currently, ScreenSage is only available as a Chromium extension. **It works as-is on *Google Chrome*, the various types of Chromium and various *Chromium-based browsers such as Brave, Vivaldi and Microsoft Edge*.**
  
 **ScreenSage will soon be available on the Chrome webstore.**
 Until then, you can install ScreenSage by downloading the latest build from [Releases](https://github.com/devashish-kaushik/ScreenSage/releases). Extract the zip file to a folder.
@@ -17,14 +17,14 @@ ScreenSage will be loaded as one of your extensions. Toggle it on.
 After installation, you will see the "puzzle piece symbol" for extensions on the toolbar at the upper right corner of your window. Click on this symbol, and then click on ScreenSage.
  
 - A popup menu with the checkboxes for the following social media sites will open:
-1. Facebook
-2. Instagram
-3. Twitter
-4. Reddit
-5. 4chan
-6. Twitch
-7. YouTube
-8. Netflix
+    1. Facebook
+    2. Instagram
+    3. Twitter
+    4. Reddit
+    5. 4chan
+    6. Twitch
+    7. YouTube
+    8. Netflix
  
 - A tick mark next to a site indicates that it is currently blocked. The default is to block all of them.
  
