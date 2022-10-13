@@ -26,11 +26,7 @@
     },
 
     "permissions": [
-        "contextMenus",
-        "privacy",
         "storage",
-        "tabs",
-        "webNavigation",
         "webRequest",
         "webRequestBlocking",
         "<all_urls>"
