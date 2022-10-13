@@ -1,3 +1,34 @@
+// Initialize the filter list in the popup with current values
+window.onload = function() { // Runs everytime popup is opened
+    chrome.storage.local.get( ['urls'], function (cache) {
+        if (!cache.urls.includes("*://*.facebook.com/*")) {
+            document.getElementById("facebook").checked = false;
+        }
+        if (!cache.urls.includes("*://*.youtube.com/*")) {
+            document.getElementById("youtube").checked = false;
+        }
+        if (!cache.urls.includes("*://*.twitter.com/*")) {
+            document.getElementById("twitter").checked = false;
+        }
+        if (!cache.urls.includes("*://*.reddit.com/*")) {
+            document.getElementById("reddit").checked = false;
+        }
+        if (!cache.urls.includes("*://*.netflix.com/*")) {
+            document.getElementById("netflix").checked = false;
+        }
+        if (!cache.urls.includes("*://*.4chan.org/*")) {
+            document.getElementById("4chan").checked = false;
+        }
+        if (!cache.urls.includes("*://*.twitch.tv/*")) {
+            document.getElementById("twitch").checked = false;
+        }
+        if (!cache.urls.includes("*://*.instagram.com/*")) {
+            document.getElementById("instagram").checked = false;
+        }
+    }
+    );
+}
+
 
 // Update the block list as per the checkboxes selected by the user
 // All sites are checked when popup opens for first time as specified in html
