@@ -13,6 +13,9 @@
                 height: 100px;
                 width: 400px;
             }
+            body {
+                background-image: linear-gradient(to right, #f6d365 0%, #fda085 51%, #f6d365 100%);
+            }
         </style>
 
 
@@ -20,47 +23,82 @@
     </head>
     <body>
         <div class="container">
-            Select the sites which you want to block:
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="facebook" name="facebook" value="*://*.facebook.com/*" checked>
-                <label class="form-check-label" for="facebook"> Block Facebook</label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox"  id="youtube" name="youtube" value="*://*.youtube.com/*" checked>
-                <label class="form-check-label" for="youtube"> Block YouTube</label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox"  id="twitter" name="twitter" value="*://*.twitter.com/*" checked>
-                <label class="form-check-label" for="twitter"> Block Twitter</label>
-            </div> 
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox"  id="reddit" name="reddit" value="*://*.reddit.com/*" checked>
-                <label class="form-check-label" for="reddit"> Block Reddit</label>
-            </div>    
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox"  id="netflix" name="netflix" value="*://*.netflix.com/*" checked>
-                <label class="form-check-label" for="netflix"> Block Netflix</label>
-            </div>  
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox"  id="4chan" name="4chan" value="*://*.4chan.org/*" checked>
-                <label class="form-check-label" for="4chan"> Block 4chan</label>
-            </div>  
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox"  id="twitch" name="twitch" value="*://*.twitch.tv/*" checked>
-                <label class="form-check-label" for="twitch"> Block Twitch</label>
-            </div>  
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox"  id="instagram" name="instagram" value="*://*.instagram.com/*" checked>
-                <label class="form-check-label" for="instagram"> Block Instagram</label>
-            </div> 
+            <br>
+            <h4>Select the websites/ URLs which you want to block: </h4>
+            <table class="table table-striped">
+                <tr>
+                    <td>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="facebook" name="facebook" value="*://*.facebook.com/*" checked>
+                            <label class="form-check-label" for="facebook"> Block Facebook</label>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox"  id="youtube" name="youtube" value="*://*.youtube.com/*" checked>
+                            <label class="form-check-label" for="youtube"> Block YouTube</label>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox"  id="twitter" name="twitter" value="*://*.twitter.com/*" checked>
+                            <label class="form-check-label" for="twitter"> Block Twitter</label>
+                        </div>
+                    </td>
+                </tr> 
+                <tr>
+                    <td>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox"  id="reddit" name="reddit" value="*://*.reddit.com/*" checked>
+                            <label class="form-check-label" for="reddit"> Block Reddit</label>
+                        </div>   
+                    </td>
+                </tr> 
+                <tr>
+                    <td>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox"  id="netflix" name="netflix" value="*://*.netflix.com/*" checked>
+                            <label class="form-check-label" for="netflix"> Block Netflix</label>
+                        </div> 
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox"  id="4chan" name="4chan" value="*://*.4chan.org/*" checked>
+                            <label class="form-check-label" for="4chan"> Block 4chan</label>
+                        </div>  
+                    </td>
+                </tr> 
+                <tr>
+                    <td>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox"  id="twitch" name="twitch" value="*://*.twitch.tv/*" checked>
+                            <label class="form-check-label" for="twitch"> Block Twitch</label>
+                        </div> 
+                    </td>
+                </tr> 
+                <tr>
+                    <td>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox"  id="instagram" name="instagram" value="*://*.instagram.com/*" checked>
+                            <label class="form-check-label" for="instagram"> Block Instagram</label>
+                        </div> 
+                    </td>
+                </tr>
+            </table>
             <button name = "blocking" id="blocking" type="button" class="btn btn-primary">
                 Block
-            </button>  
+            </button>
             <hr>
         </div> 
         
         <script src="popup.js" defer></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
-
+        <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+ -->
     </body>
 </html>
