@@ -5,7 +5,7 @@ function blockRequest(details) {
 }
 
 // The default list of all social media sites to be blocked
-var defaultFilter = { urls: ["*://prohibited.illegal.domain/*", "*://*.facebook.com/*", "*://*.youtube.com/*", "*://*.twitter.com/*", "*://*.reddit.com/*", "*://*.netflix.com/*", "*://*.4chan.org/*", "*://*.twitch.tv/*","*://*.instagram.com/*"]};
+var defaultFilter = { urls: ["*://prohibited.illegal.domain/*", "*://*.facebook.com/*", "*://*.youtube.com/*", "*://*.twitter.com/*", "*://twitter.com/*", "*://*.reddit.com/*", "*://*.netflix.com/*", "*://*.4chan.org/*", "*://*.twitch.tv/*","*://*.instagram.com/*"]};
 
 // Runs when extension is first installed
 // Basically to do some housekeeping and setup work
