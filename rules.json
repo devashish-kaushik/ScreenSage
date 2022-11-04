@@ -1,0 +1,90 @@
+[
+    {
+        "id" : 1,
+        "action" : {
+            "redirect":{"extensionPath": "/sagemode.html"},
+            "type": "redirect"
+        },
+        "condition" : {
+            "urlFilter": "*://*.facebook.com/*",
+            "resourceTypes": ["main_frame"]
+        }
+    },
+    {
+        "id" : 2,
+        "action" : {
+            "redirect":{"extensionPath": "/sagemode.html"},
+            "type": "redirect"
+        },
+        "condition" : {
+            "urlFilter": "*://*.youtube.com/*",
+            "resourceTypes": ["main_frame"]
+        }
+    },
+    {
+        "id" : 3,
+        "action" : {
+            "redirect":{"extensionPath": "/sagemode.html"},
+            "type": "redirect"
+        },
+        "condition" : {
+            "urlFilter": "*://*.twitter.com/*",
+            "resourceTypes": ["main_frame"]
+        }
+    },
+    {
+        "id" : 4,
+        "action" : {
+            "redirect":{"extensionPath": "/sagemode.html"},
+            "type": "redirect"
+        },
+        "condition" : {
+            "urlFilter": "*://*.reddit.com/*",
+            "resourceTypes": ["main_frame"]
+        }
+    },
+    {
+        "id" : 5,
+        "action" : {
+            "redirect":{"extensionPath": "/sagemode.html"},
+            "type": "redirect"
+        },
+        "condition" : {
+            "urlFilter": "*://*.netflix.com/*",
+            "resourceTypes": ["main_frame"]
+        }
+    },
+    {
+        "id" : 6,
+        "action" : {
+            "redirect":{"extensionPath": "/sagemode.html"},
+            "type": "redirect"
+        },
+        "condition" : {
+            "urlFilter": "*://*.4chan.org/*",
+            "resourceTypes": ["main_frame"]
+        }
+    },
+    {
+        "id" : 7,
+        "action" : {
+            "redirect":{"extensionPath": "/sagemode.html"},
+            "type": "redirect"
+        },
+        "condition" : {
+            "urlFilter": "*://*.twitch.tv/*",
+            "resourceTypes": ["main_frame"]
+        }
+    },
+    {
+        "id" : 8,
+        "action" : {
+            "redirect":{"extensionPath": "/sagemode.html"},
+            "type": "redirect"
+        },
+        "condition" : {
+            "urlFilter": "*://*.instagram.com/*",
+            "resourceTypes": ["main_frame"]
+        }
+    }
+]
