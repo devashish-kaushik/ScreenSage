@@ -1,7 +1,7 @@
 // A callback function which returns the webpage which replaces blocked sites
 //Used by the blocking API call to webRequest.onBeforeRequest
 function blockRequest(details) {
-    return {redirectUrl: "chrome-extension://kgeeojleeblggkaeloloinflodojcnad/sagemode.html"};
+    return {redirectUrl: "moz-extension://a08846c5-fbe4-4047-815f-6ca2b00bf40c/sagemode.html"};
 }
 
 // The default list of all social media sites to be blocked
